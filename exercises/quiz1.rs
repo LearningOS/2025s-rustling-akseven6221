@@ -15,14 +15,16 @@
 
 
 // Put your function here!
-fn calculate_price_of_apples(number: i32) -> i32 {
+// fn calculate_price_of_apples {
 
-    if number > 40 {
-        number
+fn calculate_price_of_apples (money: u32) -> u32 {
+    if money <= 40 {
+        money * 2
     } else {
-        number * 2
+        money
     }
 }
+
 
 // Don't modify this function!
 #[test]
